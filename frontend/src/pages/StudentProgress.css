@@ -1,0 +1,25 @@
+/* StudentProgress.css */
+
+.student-progress-popup {
+  width: 80%; /* Adjust the width of the dialog */
+  max-width: 800px; /* Set a maximum width */
+  max-height: 100%; /* Set a maximum width */
+  background-color: #fff; /* Dialog background color */
+  border-radius: 8px; /* Border radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  padding: 10px;
+}
+
+.student-progress-popup .p-dialog-content {
+  max-height: 400px; /* Set a maximum height for the dialog content */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds the max height */
+  padding-top: 50rem; /* Adjust the value as needed */
+  max-height: 100%; /* Set a maximum width */
+}
+
+.item-selected-ans-div {
+  background-color: white;
+  width: 40%;
+  border-radius: 5px;
+  padding: 20px;
+}

@@ -1,0 +1,150 @@
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.home-background {
+  position: absolute;
+  top: 103px;
+  left: 0;
+  width: 100%;
+  height: 61%;
+  background-image: url("../img/home-header.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.home-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  top: 150px;
+  margin-bottom: 380px;
+}
+
+.home-header-title {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.home-header-text {
+  font-size: 1.1rem;
+  margin-top: 20px;
+  width: 60%;
+  z-index: 1;
+  font-weight: 400;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Set the background color with transparency */
+  border-radius: 5px;
+  backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+.btn-primary {
+  margin-top: 20px;
+  z-index: 1; /* Ensure button is above the background */
+}
+
+.home-divisions .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+}
+
+.student-home-divisions .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.home-divisions-contents {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.home-game-icon {
+  margin-bottom: 5px;
+  font-size: 60px;
+  color: orange;
+}
+
+.home-bulb-icon {
+  margin-bottom: 5px;
+  font-size: 60px;
+  color: #1273de;
+}
+
+.home-trophy-icon {
+  margin-bottom: 5px;
+  font-size: 60px;
+  color: yellow;
+}
+
+.home-divisions-title {
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "mimopro", sans-serif;
+  margin-bottom: 10px;
+}
+
+.home-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Ensure the overlay appears above other content */
+}
+
+.home-overlay-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.home-overlay.fade-out {
+  animation: fadeOut 1s ease forwards;
+}
+
+.home-crown {
+  color: yellow;
+  width: 50px;
+  height: 50px;
+}
+
+.home-overlay-text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.home-overlay-award-text {
+  font-size: 15px;
+  font-weight: 500;
+}

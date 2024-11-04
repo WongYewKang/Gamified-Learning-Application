@@ -1,0 +1,144 @@
+.circle {
+  position: absolute;
+  top: 36.3%;
+  right: 39.7%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  background-color: rgb(210, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.doughnut-chart {
+  width: 242px !important;
+  height: 242px !important;
+  margin-right: 30px;
+}
+
+.doughnut-chart-details {
+  display: flex;
+  align-items: center;
+}
+
+.doughnut-chart-details-text {
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.doughnut-chart-details-text-bottom {
+  font-size: 15px;
+}
+
+.percentage {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.green {
+  color: rgb(56, 194, 56);
+}
+
+.yellow {
+  color: #fccb00;
+}
+
+.red {
+  color: red;
+}
+
+.correct-text {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.action-log {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.action-log-time-label {
+  font-weight: bold;
+  color: #008b02;
+  font-size: 20px;
+}
+
+.action-log-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.action-log-item-selected-ans {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.action-log-item-selected-ans-div {
+  background-color: white;
+  width: 20%;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.action-log-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.action-log-value {
+  color: #9900ef;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.action-log-item:last-child {
+  margin-bottom: 0;
+}
+
+.action-log-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.action-log-info-icon {
+  font-size: 18px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.action-log-info-text {
+  color: #666;
+}
+
+.ordinal {
+  position: relative;
+  top: -0.7em; /* Adjust as needed */
+  font-size: 15px;
+}
+
+.date {
+  margin-right: 20px;
+}
+
+.time {
+  color: #0693e3; /* Change to your desired color for the time */
+}

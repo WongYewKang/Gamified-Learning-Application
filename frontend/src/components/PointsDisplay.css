@@ -1,0 +1,28 @@
+.points-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 10px 20px; /* Adjust padding as needed */
+  padding-left: 10px;
+  width: auto;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+.points-icon {
+  font-size: 15px;
+  margin-right: 10px; /* Increase margin-right for spacing */
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 5px;
+  color: gold;
+}
+
+.points-value {
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+  color: gold;
+}
+
+.points-container:hover .points-icon {
+  transform: rotate(360deg) scale(1);
+}

@@ -1,0 +1,94 @@
+/* Signup.css */
+
+.signup-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.signup-container {
+  width: 400px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: auto; /* Center-align the content */
+  background-color: white;
+}
+
+.signup-container label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.signup-container input {
+  width: calc(100% - 24px); /* Adjusted width with padding taken into account */
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: -8px;
+}
+
+.signup-container button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: -10px;
+}
+
+.signup-container button:hover {
+  background-color: #45a049;
+}
+
+.signup-container .errmsg {
+  color: #ff0000;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.signup-container .offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.signup-container .forgot-password {
+  margin-top: -15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.signup-container .forgot-password a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.signup-container .forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.signup-container .create-acc {
+  font-size: 14px;
+}
+
+.signup-container .create-acc a {
+  color: #083c79;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.signup-container .create-acc a:hover {
+  text-decoration: underline;
+}

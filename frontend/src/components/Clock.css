@@ -1,0 +1,41 @@
+.clock {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color: #9900ef;
+  border-radius: 50%;
+}
+
+.rotator {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: #e1bee7;
+  border-radius: 200px 0 0 200px;
+  transform-origin: 100% 50%;
+  transition: transform 1s linear;
+}
+
+.mask {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: #9900ef;
+  border-radius: 200px 0 0 200px;
+}
+
+.mask.mask2 {
+  background-color: #e1bee7;
+  border-radius: 0 200px 200px 0;
+  right: 0;
+}
+
+.clock-text {
+  font-size: 35px;
+  top: 55%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+}

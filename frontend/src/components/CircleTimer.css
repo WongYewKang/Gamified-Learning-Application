@@ -1,0 +1,47 @@
+/* CircleTimer.css */
+.time-wrapper {
+  width: 80px;
+  color: white;
+  margin-bottom: 130px;
+}
+
+.timer-text,
+.timer-countdown {
+  position: absolute;
+  font-size: 30px; /* Font size for the timer text */
+  text-align: center; /* Center the text */
+  left: 0;
+  width: 100%;
+}
+
+.timer-text {
+  top: 0;
+  color: #5ec562;
+}
+
+.timer-countdown {
+  top: 35px; /* Adjust the top position to add space between timer-text and timer-countdown */
+}
+
+.time-wrapper .time {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 0.2s, transform 0.2s; /* Adjust transition properties */
+}
+
+.time-wrapper .time.up {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.time-wrapper .time.down {
+  opacity: 0;
+  transform: translateY(100%);
+}

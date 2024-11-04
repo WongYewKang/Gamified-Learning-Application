@@ -1,0 +1,58 @@
+/* src/pages/CreateCourse.css */
+
+.create-course-container {
+    text-align: center;
+    padding: 200px;
+  }
+  
+  .options-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .option {
+    cursor: pointer;
+    padding: 20px;
+    border: 1px solid #ccc; /* Set border property with a consistent value */
+    border-width: 1px; /* Set the border width to a specific size, adjust as needed */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+  }  
+  
+  .option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .selected {
+    background-color: #f0f0f0;
+    color: black;
+    border-color: #5da1fa;
+  }
+  
+  .option-icon {
+    font-size: 24px;
+    margin-bottom: -10px;
+    margin-top: 11px;
+  }
+  
+  .create-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none; /* Remove border property for .create-button */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

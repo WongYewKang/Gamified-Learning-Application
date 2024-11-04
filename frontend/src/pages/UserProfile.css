@@ -1,0 +1,164 @@
+.user-profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative; /* Set the container position to relative */
+  margin-top: 10%;
+}
+
+.student-user-details {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 80vh;
+  height: auto;
+}
+
+.teacher-user-details {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 80vh;
+}
+
+.student-user-details span {
+  font-size: 18px; /* Increase font size for user details */
+  font-weight: bold; /* Add bold font weight */
+  color: #333; /* Darken text color */
+}
+
+.teacher-user-details span {
+  font-size: 18px; /* Increase font size for user details */
+  font-weight: bold; /* Add bold font weight */
+  color: #333; /* Darken text color */
+}
+
+.user-profile-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Change to space-between */
+  margin-bottom: 20px;
+}
+
+.user-profile-points-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items at the center */
+  text-align: center; /* Align text at the center */
+  flex: 1; /* Let each container grow equally */
+}
+
+.user-avatar {
+  position: absolute; /* Set the avatar position to absolute */
+  top: -100px; /* Adjust the top position to move it up */
+  left: 50%; /* Center the avatar horizontally */
+  transform: translateX(-50%); /* Center the avatar horizontally */
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #00ff22;
+  box-shadow: 0 0 10px rgba(209, 133, 133, 0.1);
+  cursor: pointer;
+}
+
+.user-avatar-img {
+  width: 100%; /* Make the image fill the avatar container */
+  height: 100%; /* Make the image fill the avatar container */
+  object-fit: cover; /* Ensure the image fits well */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Set width to 100% to cover the entire circle */
+  height: 100%; /* Set height to 100% to cover the entire circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 0.3s ease; /* Add transition effect for smooth appearance */
+}
+
+.user-avatar:hover .overlay {
+  opacity: 1; /* Set opacity to 1 when hovering */
+}
+
+.user-profile-points-container span {
+  font-size: 16px;
+  color: #007bff; /* Dark blue for values */
+}
+
+.user-profile-points-container span:nth-child(2) {
+  color: #666; /* Change color of points text */
+}
+
+.user-email {
+  margin-top: -10px;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.user-role {
+  font-size: 18px;
+  color: #09ab70;
+  font-weight: 500;
+}
+
+.avatar-container {
+  width: 100px; /* Adjust the width and height to fit your design */
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%; /* Ensure the container is a circle */
+}
+
+.avatar-image {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto;
+  transition: transform 0.2s; /* Add smooth transition effect */
+}
+
+.avatar-container:hover .avatar-image {
+  transform: scale(1.1); /* Scale up the image on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.level-exp {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.user-badges-container {
+  background-color: white;
+  border-radius: 5px;
+  width: 80%; /* Adjust the width as needed */
+  justify-content: center; /* Align badges container at the center horizontally */
+  margin: 0 auto; /* Center badges container */
+}
+
+.badges-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow badges to wrap to the next row */
+  justify-content: center; /* Center badges horizontally */
+}
+
+.badges-grid > div {
+  width: calc(100% / 4); /* Set width to one-third of the container */
+  padding: 10px; /* Add padding between badges */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  text-align: center; /* Center badge content horizontally */
+}
+
+.badges-grid img {
+  height: 80px;
+}

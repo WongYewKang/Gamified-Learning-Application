@@ -1,0 +1,83 @@
+/* src/pages/Quizzes.css */
+
+.quizzes-container {
+  margin: 50px;
+}
+
+.quizzes-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quizzes-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+.quiz-item {
+  border: 1px solid #ccc; /* Border color and width */
+  border-radius: 8px; /* Border radius for rounded corners */
+  padding: 10px; /* Padding to create space between cells */
+  margin-bottom: 20px; /* Margin to create space between rows */
+}
+
+.quiz-item:hover {
+  transition: background-color 0.3s;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.quiz-title {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.quiz-opr {
+  display: flex; /* Use flex to align items horizontally */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.quiz-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align items with space between */
+}
+
+.quiz-item {
+  display: flex;
+  align-items: center;
+}
+
+.quiz-image {
+  width: 200px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.quizzes-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.quizzes-list {
+  overflow-y: auto;
+  max-height: 750px; /* Adjust the max-height as needed */
+}
+
+.documents-list-container {
+  max-height: 750px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+.documents-list {
+  /* Add any additional styling for the documents list */
+}

@@ -1,0 +1,161 @@
+.course-title-input {
+  padding: 10px;
+  background-color: white;
+  color: #555;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none; /* Remove the default input outline */
+}
+
+.course-title-input::placeholder {
+  color: #555; /* Adjust the placeholder color */
+}
+
+.add-course-panels {
+  display: flex;
+  width: 100%;
+}
+
+.add-course-main-panel {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Add this to make positioning of child elements relative to this container */
+  border-left: 1px solid #ddd;
+}
+
+.add-activities-division {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.activity-division {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  margin: 0 50px; /* Add horizontal spacing between buttons */
+  margin-top: 60px;
+  border: 1px solid #ddd;
+  border-radius: 6%;
+}
+
+.activity-division:hover {
+  background-color: #ddd;
+}
+
+.course-quizzes-container {
+  max-height: 700px;
+  overflow-y: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.added-quiz {
+  align-items: center;
+  display: flex;
+  justify-content: space-between; /* Align items to start and end */
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  overflow-y: auto;
+}
+
+.added-quiz:hover {
+  background-color: #ddd;
+}
+
+.added-quiz-image {
+  height: 60px;
+  width: 70px;
+}
+
+.remove-item-button {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.remove-item-button:hover {
+  color: #9c9c9c;
+}
+
+.add-quiz-details-container {
+  display: flex;
+  margin-top: 150px;
+  margin-left: 40px;
+  position: fixed;
+  top: 0;
+  max-height: 80vh; /* Set a maximum height for the container */
+}
+
+.add-quiz-details-left {
+  max-height: 100%; /* Use max-height instead of height */
+  width: 300px;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  overflow-y: auto; /* Add overflow-y to make the left panel scrollable */
+}
+
+.add-activity-division {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.activities-left-panel {
+  overflow-y: auto;
+}
+
+.vertical-line {
+  border-left: 1px solid black;
+  height: 720px;
+}
+
+.edit-course-quiz-details {
+  margin-top: 40px;
+  cursor: pointer;
+  background-color: transparent; /* Set default background color to transparent */
+  width: 480px;
+}
+
+.edit-course-quiz-questions {
+  overflow-y: auto; /* Add overflow-y to make the content scrollable */
+  max-height: 450px;
+}
+
+.add-course-right-content {
+  padding: 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  background-color: transparent; /* Set default background color to transparent */
+  width: 460px;
+}
+
+.add-course-right-content-quiz {
+  height: 750px;
+  overflow-y: auto;
+}
+
+.add-course-image {
+  width: 200px;
+  height: 150px;
+}
+
+.add-course-right-content-quiz-details {
+  margin-top: 40px;
+  cursor: pointer;
+  background-color: transparent; /* Set default background color to transparent */
+  width: 450px;
+}
+
+.add-course-right-content-quiz-details:hover {
+  background-color: #f5f5f5;
+}

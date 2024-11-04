@@ -1,0 +1,62 @@
+/* EarnedPointsOverlay.css */
+.earned-points-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Black overlay with transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's above other elements */
+}
+
+.earned-points-message {
+  color: white;
+  text-align: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5); /* Increased opacity here */
+  border-radius: 8px;
+}
+
+.earned-points-image {
+  height: 160px;
+  width: 110px;
+  border-radius: 8px; /* Ensure the same border-radius */
+  margin-bottom: 10px;
+}
+
+.quiz-summary-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark overlay with transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.quiz-summary-container {
+  background: white;
+  padding: 60px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.quiz-summary-icon {
+  font-size: 60px;
+  color: #3bff47;
+}
+
+.quiz-summary-results {
+  display: grid;
+  grid-template-columns: max-content auto;
+  text-align: start;
+  justify-content: space-between;
+  margin-top: 25px;
+}

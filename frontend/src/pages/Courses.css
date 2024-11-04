@@ -1,0 +1,60 @@
+/* src/pages/Courses.css */
+
+.courses-container {
+  width: 1700px;
+}
+
+.course-title {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.course-title-decoration {
+  height: 2px;
+  width: 50px; /* Adjust the length as needed */
+  background-color: #007bff; /* Choose your desired color */
+  margin: 10px auto; /* Center the line */
+}
+
+table {
+  border-radius: 10px;
+}
+
+th {
+  border: 1px solid black;
+  text-align: left;
+  font-size: 1.1rem;
+  height: 50px;
+}
+
+td {
+  height: 30px;
+  vertical-align: middle; /* Add this line to vertically center the text */
+}
+
+.course-table-body {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.course-table-header {
+  border-left: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+tr:hover {
+  cursor: pointer;
+}
+
+.first-column {
+  width: 40%; /* Adjust the width of the first column */
+}
+
+.add-course-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}

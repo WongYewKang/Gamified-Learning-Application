@@ -1,0 +1,139 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -25px;
+  border-bottom: 1px solid #ddd;
+}
+
+.teacher-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-top: -5px;
+}
+
+.navbar-before {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+}
+
+.navbar-link {
+  color: white; /* Change color to black */
+  font-size: 18px; /* Adjust font size as needed */
+  text-decoration: none; /* Disable underline */
+  font-weight: 500;
+}
+
+.navbar-link:hover {
+  color: #adadad;
+}
+
+.active {
+  color: #adadad;
+}
+
+.profile-icon {
+  color: white; /* Change color to black */
+  font-size: 24px; /* Adjust icon size as needed */
+  margin-right: 10px; /* Adjust margin as needed */
+  margin-bottom: 10px;
+}
+
+.profile-details {
+  color: white; /* Change color to black */
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-username {
+  font-weight: bold;
+  font-size: 18px; /* Adjust font size as needed */
+  margin-bottom: -5px; /* Adjust margin as needed */
+}
+
+.profile-email {
+  font-size: 15px; /* Adjust font size as needed */
+}
+
+.logo {
+  width: 250px;
+  height: 75px;
+  margin-top: -10px;
+  margin-left: 60px;
+}
+
+.add-course-logo {
+  width: 250px;
+  height: 75px;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.profile-container {
+  margin-right: 5px;
+}
+
+/* Move the dropdown menu up a bit */
+.dropdown-menu {
+  margin-top: -5px; /* Adjust the margin to move the menu up */
+}
+
+.logout-link {
+  color: black; /* Change color to black */
+  font-size: 16px; /* Adjust font size as needed */
+  text-decoration: none; /* Disable underline */
+  margin-left: 17px;
+}
+
+.navigation-container {
+  margin-left: 100px;
+}
+
+.teacher-navigation-container {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+/* Add styles for profile section */
+.profile-section:hover .profile-icon,
+.profile-section:hover .profile-username,
+.profile-section:hover .profile-email {
+  color: #ddd;
+}
+
+.nav-avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Make the image round */
+  border: 3px solid #007bff; /* Add border */
+  margin-bottom: 18px;
+  margin-right: 8px;
+}
+
+.level-container {
+  margin-top: -15px;
+  margin-right: 30px;
+}
+
+.level-icon {
+  color: #68ccca;
+  width: 20px;
+  height: 30px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+.level-text {
+  color: #40bfa2;
+  font-weight: 600;
+}
+
+.progress-bar {
+  background-color: #00d084;
+}

@@ -1,0 +1,29 @@
+.activities-sidebar-header {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  margin-left: 5px;
+}
+
+.activities-sidebar ul {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 5px;
+}
+
+.activities-sidebar li {
+  cursor: pointer;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s;
+}
+
+.activities-sidebar li:hover {
+  background-color: #ddd;
+}
+
+.activities-sidebar li.selected {
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+}

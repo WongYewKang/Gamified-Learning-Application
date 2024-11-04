@@ -1,0 +1,199 @@
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100vh;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.board-title-decoration {
+  height: 2px;
+  width: 150px; /* Adjust the length as needed */
+  background-color: #007bff; /* Choose your desired color */
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.board .leaderboard {
+  margin-bottom: 1em;
+}
+
+#profile .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#profile .flex:nth-child(odd) {
+  animation: jump 1s infinite alternate 0.5s; /* Apply the animation with a delay for odd rows */
+}
+
+#profile .flex:nth-child(even) {
+  animation: jump 1s infinite alternate 1s; /* Apply the animation with a delay for even rows */
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  100% {
+    transform: translateY(-10px); /* End position */
+  }
+}
+
+#profile .flex:hover {
+  transform: translateY(-5px); /* Move the element upward on hover */
+}
+
+#profile .flex .item {
+  display: flex;
+  align-items: center;
+  width: 65vh;
+  height: 30px;
+}
+
+#profile .flex img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition: transform 0.2s ease-in-out; /* Add transition effect */
+}
+
+#profile .flex img:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+#profile .flex .info {
+  font-size: 1.2rem;
+  display: flex; /* Add display flex */
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center; /* Align items to the left */
+}
+
+#profile .flex .info .avatar {
+  width: 50px; /* Set width of the avatar */
+  height: 50px; /* Set height of the avatar */
+  border-radius: 50%; /* Make it a circle */
+  border: 2px solid #007bff; /* Add border */
+  box-shadow: 0 0 10px rgba(209, 133, 133, 0.1); /* Add shadow */
+  overflow: hidden; /* Hide overflowing content */
+  margin-right: 10px;
+}
+
+#profile .flex .info .details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start/left */
+}
+
+#profile .flex .info .avatar .avatar-img {
+  width: 100%; /* Make the image fill the avatar container */
+  height: 100%; /* Make the image fill the avatar container */
+  object-fit: cover; /* Ensure the image fits well */
+}
+
+#profile .flex .info .details .email {
+  font-size: 15px;
+  font-style: italic; /* Make the text italic */
+}
+
+#profile .flex .score {
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ff9900;
+}
+
+#profile .flex .score {
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ff9900;
+  width: 70px; /* Adjust the width as needed */
+  justify-content: flex-end; /* Align the content to the end */
+}
+
+#profile .flex:nth-child(1) {
+  /* Apply special styles for the top 1 */
+  background-color: #7bdcb5; /* Example background color */
+}
+
+#profile .flex:nth-child(2) {
+  /* Apply special styles for the top 1 */
+  background-color: #ffe341; /* Example background color */
+}
+
+#profile .flex:nth-child(3) {
+  /* Apply special styles for the top 2 */
+  background-color: #c0c0c0; /* Example background color */
+}
+
+#profile .flex:nth-child(4) {
+  /* Apply special styles for the top 3 */
+  background-color: #cd7f32; /* Example background color */
+}
+
+#profile .flex .user-rank-bar {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#profile .flex .gold-medal {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+}
+
+#profile .flex .silver-medal {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+}
+
+#profile .flex .bronze-medal {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+}
+
+#profile .flex .info .avatar .medal {
+  margin-right: 10px; /* Add some space between medal and avatar */
+}
+
+#profile .flex .board-pts-text {
+  color: black;
+  font-size: 0.8rem; /* Adjust font size as needed */
+  font-weight: normal; /* Adjust font weight as needed */
+}
+
+#profile .flex .board-pts {
+  font-size: 1rem; /* Adjust font size as needed */
+  color: black; /* Adjust color as needed */
+  margin-top: 5px;
+}
+
+.place-index {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 35px;
+  font-weight: bold;
+}

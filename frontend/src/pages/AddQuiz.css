@@ -1,0 +1,322 @@
+.panels {
+  display: flex;
+  height: calc(100vh - 90px); /* Adjust the height to account for the top bar */
+}
+
+.top-bar {
+  padding: 18px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  height: 60px;
+}
+
+.logo {
+  width: 120px;
+  height: 90px;
+  margin-top: 20px;
+}
+
+.popup-button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: white;
+  color: #555;
+  border-radius: 5px;
+  width: 300px;
+  margin-left: 20px; /* Adjust the margin to position the button to the right of the logo */
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.save-exit-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto; /* Move the container to the rightmost side */
+  margin-bottom: 20px;
+}
+
+.quiz-details-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  z-index: 1000;
+  width: 500px; /* Set a fixed width for the popup */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-input {
+  background-color: white;
+  border: 1px solid #ddd;
+  width: 1100px;
+  height: 60px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.left-panel,
+.main-panel,
+.right-panel {
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.left-panel {
+  background-color: #f0f0f0;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-panel h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.left-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-panel li {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.left-panel li:hover {
+  background-color: #eee;
+}
+
+.main-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/background.jpg"); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  padding: 20px; /* Add padding as needed */
+  position: relative; /* Add this to make positioning of child elements relative to this container */
+}
+
+.main-panel-student {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the content vertically */
+  padding: 20px;
+  position: relative;
+  height: 100%; /* Ensure the panel takes 100% height of its container */
+}
+
+.main-panel h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.main-panel input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.file-input-container {
+  position: relative;
+  width: 600px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  border: 2px dashed #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.select-box {
+  width: 100px; /* Set the width of the select box */
+  height: 30px; /* Set the height of the select box */
+  border-radius: 5px;
+}
+
+.add-quiz-label {
+  font-weight: bold; /* Make the label bold */
+  color: #333; /* Set the color of the label */
+  margin-right: 8px; /* Add some space between the label and the select box */
+}
+
+.file-input-container-student {
+  position: relative;
+  width: 800px; /* Adjust the width as needed */
+  height: 600px; /* Adjust the height as needed */
+  margin-top: 50px;
+}
+
+.file-preview {
+  max-width: 100%;
+  max-height: 100%; /* Ensure the image doesn't exceed the height of the input box */
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.file-icon {
+  font-size: 60px; /* Adjust the font size as needed */
+  color: #555;
+}
+
+.file-text {
+  font-size: 18px; /* Adjust the font size as needed */
+  color: #555;
+  margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.answer-container-top,
+.answer-container-bottom {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.answers-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer-input {
+  flex: 1;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.answer-input-with-icon {
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.answer-container-top {
+  margin-top: 50px; /* Add a top margin to separate the top and bottom answer containers */
+}
+
+.answer-container-bottom {
+  margin-top: 15px; /* Add a top margin to separate the top and bottom answer containers */
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 4px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 40%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.input {
+  height: 50px;
+  box-sizing: border-box;
+  padding-left: 3rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  margin-left: 15px;
+  width: 500px;
+}
+
+.quiz-details-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  z-index: 1000;
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.desc-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cover-image-container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.cover-image-input-container {
+  position: relative;
+  width: 80%; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  border: 2px dashed #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.title {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+.desc {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  resize: none;
+}

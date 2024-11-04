@@ -1,0 +1,26 @@
+.item-img {
+  width: 200px;
+  height: 180px;
+  margin-left: 20px;
+}
+
+.item-card {
+  width: 250px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.item-price {
+  font-size: 18px;
+  margin-left: 15px;
+  color: #0693e3;
+  font-weight: 500;
+}
+
+.item-icon {
+  font-size: 28px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 20px;
+  color: #4caf50;
+}
